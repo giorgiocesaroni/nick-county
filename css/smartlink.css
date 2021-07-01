@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  padding: 1rem;
+  min-width: 320px;
+}
+.container h1 {
+  font-size: 1.5rem;
+}
+.container h2 {
+  font-size: 1rem;
+  opacity: 0.75;
+  font-weight: normal;
+}
+.container hr {
+  opacity: 0.15;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.container .background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/jesus-is-dead-artwork-640.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(1rem) brightness(50%);
+}
+.container a:link, .container a:visited, .container a:hover, .container a:active {
+  color: white;
+  text-decoration: none;
+}
+.container .wrapper {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+.container .wrapper .player {
+  position: relative;
+}
+.container .wrapper .player i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  opacity: 0.75;
+  transition: opacity 0.25s;
+}
+.container .wrapper .player i:hover {
+  opacity: 1;
+}
+.container img.artwork, .container .stream-source {
+  width: 100%;
+  max-width: 320px;
+  min-width: 120px;
+}
+.container img.artwork {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+.container .title {
+  padding: 1rem;
+  text-align: center;
+}
+.container .stream-source {
+  height: 3.5rem;
+  transition: background-color 0.5s;
+}
+.container .stream-source span, .container .stream-source p {
+  transition: color 0.5s, text-shadow 0.5s;
+}
+.container .stream-source:hover {
+  background-color: #2d2d2d;
+}
+.container .stream-source:hover span, .container .stream-source:hover p {
+  color: aqua;
+  text-shadow: 0px 0px 3px #0000007d;
+}
+.container .stream-source a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.container .stream-source img.service-icon {
+  width: 85px;
+}
+.container .stream-source p {
+  width: 100%;
+}
+
+/*# sourceMappingURL=smartlink.css.map */
