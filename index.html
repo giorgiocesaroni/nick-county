@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nick County</title>
   <link rel="stylesheet" href="css/smartlink.css">
-  <script src="https://kit.fontawesome.com/2149f0becd.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2149f0becd.js" crossorigin="anonymous" defer></script>
   <!-- Facebook Pixel Code -->
-  <script>
+  <script defer>
     ! function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
@@ -31,7 +31,7 @@
     fbq('init', '1945877988883479');
     fbq('track', 'PageView');
   </script>
-  <noscript>
+  <noscript defer>
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1945877988883479&ev=PageView&noscript=1" />
   </noscript>
@@ -72,9 +72,17 @@
       </div>
       <hr>
       <div class="stream-source">
+        <a href="https://music.apple.com/us/album/jesus-is-dead/1569977902?i=1569977903"
+          onclick="fbq('track', 'ViewContent', { content_name: 'YouTube' });">
+          <img class="service-icon" src="img/icns/yt-logo.png" width="200" alt="apple music itunes png logo" />
+          <span>Watch <i class="fas fa-play"></i></span>
+        </a>
+      </div>
+      <hr>
+      <div class="stream-source">
         <a href="https://nickcountyvinyl.com/">
-          <p>Pre-order the album vinyl</p>
-          <img class="service-icon" src="" alt="">
+          <p>Pre-order the vinyl</p>
+          <span>Link <i class="fas fa-play"></i></span>
         </a>
       </div>
     </div>

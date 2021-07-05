@@ -4,11 +4,6 @@
   margin: 0;
 }
 
-html, body, .container {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   background-color: black;
 }
@@ -53,12 +48,13 @@ body {
   text-decoration: none;
 }
 .container .wrapper {
+  overflow: hidden;
+  margin: 1rem;
   position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  overflow: hidden;
   background-color: #1e1e1e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
@@ -73,7 +69,7 @@ body {
   font-size: 2rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
   opacity: 0.75;
-  transition: opacity 0.25s;
+  transition: opacity 0.1s;
 }
 .container .wrapper .player i:hover {
   opacity: 1;
@@ -92,10 +88,10 @@ body {
 }
 .container .stream-source {
   height: 3.5rem;
-  transition: background-color 0.5s;
+  transition: background-color 0.1s;
 }
 .container .stream-source span, .container .stream-source p {
-  transition: color 0.5s, text-shadow 0.5s;
+  transition: color 0.1s, text-shadow 0.1s;
 }
 .container .stream-source:hover {
   background-color: #2d2d2d;
@@ -115,8 +111,9 @@ body {
 .container .stream-source img.service-icon {
   width: 85px;
 }
-.container .stream-source p {
-  width: 100%;
+.container .stream-source i {
+  font-size: 0.75rem;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=smartlink.css.map */
